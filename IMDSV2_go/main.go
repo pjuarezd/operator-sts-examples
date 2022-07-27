@@ -10,11 +10,14 @@ import (
 )
 
 func main() {
-	endpoint := "s3.amazonaws.com"
+	endpoint := "play.min.io"
+	//alternativelly could be empty string and read endpoint from AWS_EC2_METADATA_SERVICE_ENDPOINT env variable
+	operatorEndpoint := "http://operator.minio-operator.svc.cluster.local:4221"
+
 	useSSL := true
 
 	minioClient, err := minio.New(endpoint, &minio.Options{
-		Creds:  credentials.NewIAM(""),
+		Creds:  credentials.NewIAM(operatorEndpoint),
 		Secure: useSSL,
 	})
 
