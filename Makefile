@@ -37,12 +37,13 @@ minio-tenant:
 		--disable-tls
 
 awssdk-python:
-	@docker build -t pjuarezd/minio-operator-sts-example-python:latest operator-sts/AWSSDK/python/
-	@kubectl apply -f operator-sts/AWSSDK/python/job.yaml
+	@docker build -t pjuarezd/minio-operator-sts-example-python:latest AWSSDK/python/
+	@kubectl apply -f AWSSDK/python/job.yaml
 	@kubectl wait --for=condition=complete Job/python-example --timeout=300s -n myapplication
 
 miniosdk-go:
-	@go install && go build -o client
-	@docker build -t pjuarezd/minio-operator-sts-example-go:latest operator-sts/MinioSDK/go/
-	@kubectl apply -f operator-sts/MinioSDK/go/job.yaml
+	@cd MinioSDK/go/ && \
+	  go install && go build -o client
+	@docker build -t pjuarezd/minio-operator-sts-example-go:latest MinioSDK/go/
+	@kubectl apply -f MinioSDK/go/job.yaml
 	@kubectl wait --for=condition=complete Job/go-example --timeout=300s -n gosdk

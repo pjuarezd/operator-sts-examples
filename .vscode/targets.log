@@ -1,0 +1,344 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+make: *** No rule to make target `all'.  Stop.
+
+
+# Make data base, printed on Tue Aug  2 22:38:45 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+PROVIDE_FULLSTACK_ACTION = true
+# environment
+NVM_INC = /Users/pedro/.nvm/versions/node/v14.20.0/include/node
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/pedro/pjuarezd/operator-sts-examples
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+INFOPATH = /opt/homebrew/share/info:
+# environment
+VSCODE_CWD = /Users/pedro/pjuarezd/operator-sts-examples
+# environment
+PATH = /Users/pedro/.nvm/versions/node/v14.20.0/bin:/Users/pedro/.krew/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Library/Apple/usr/bin
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# environment
+GOLANG_EXECUTABLE = go
+# environment
+THREE_SCALE_USER_TOKEN = 207c527cfc2a6b8dcf4fa43ad7a976da
+# environment
+NVM_BIN = /Users/pedro/.nvm/versions/node/v14.20.0/bin
+# environment
+LaunchInstanceID = 5F7BDE68-0BC7-46AE-A1C3-5105BE3D7FE5
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+ 
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+UUID = 65056ab1-08fa-44cc-b61c-2c73574d7bc9
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.nn37xH9sUx/Listeners
+# automatic
+%F = $(notdir $%)
+# environment
+PWD = /Users/pedro/pjuarezd/operator-sts-examples
+# environment
+HOMEBREW_CELLAR = /opt/homebrew/Cellar
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+MANPATH = /Users/pedro/.nvm/versions/node/v14.20.0/share/man:/opt/homebrew/share/man::
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/pedro
+# default
+MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
+# environment
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/pedro/Library/Application Support/Code/CachedData/3b889b090b5ad5793f524b5d1d39fda662b96a2a
+# environment
+LOGNAME = pedro
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+NVM_CD_FLAGS = -q
+# environment
+TELEMETRY_ID = 7ea6f760-5569-42a0-b03c-266bce994306
+# environment
+ZSH = /Users/pedro/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# makefile (from `Makefile', line 4)
+GET_LATEST_MINIO_VERSION = $(eval MINIO_VERSION=$(shell curl -sL https://api.github.com/repos/minio/operator/releases/latest | jq -r ".tag_name"))
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 3
+# default
+MAKE_VERSION := 3.81
+# makefile (from `Makefile', line 3)
+MINIO_TENANT_NAME = minio-tenant
+# environment
+USER = pedro
+# makefile (from `Makefile', line 1)
+MINIO_VERSION = latest
+# makefile
+.DEFAULT_GOAL := create-kind-cluster
+# environment
+TERM_SESSION_ID = 2261A908-90ED-4FDF-84D2-5DF01F8078C2
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
+# environment
+UTM_SOURCE = vscode
+# environment
+TERM_PROGRAM = Apple_Terminal
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/2h/v1rvh7cj5bq5cmcjln1qkcfw0000gn/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/pedro/Library/Application Support/Code/1.69.2-main.sock
+# environment
+MallocNanoZone = 0
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+TERM_PROGRAM_VERSION = 445
+# environment
+NVM_DIR = /Users/pedro/.nvm
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.4635203.4635209.F768AE43-FB84-4557-91AC-3555FB9AC027
+# environment
+HOMEBREW_PREFIX = /opt/homebrew
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+RECOMMENDER_API_URL = https://gw.api.openshift.io//api/v2
+# automatic
++F = $(notdir $+)
+# environment
+HOMEBREW_REPOSITORY = /opt/homebrew
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x0:0x0
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+PAGER = less
+# environment
+LC_ALL = C
+# environment
+SECURITYSESSIONID = 186b1
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+MAKELEVEL := 0
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# environment
+VSCODE_PID = 543
+# makefile (from `Makefile', line 2)
+MINIO_TENANT_NAMESPACE = minio-tenant-1
+# environment
+DOCKER_HUB_PASSWORD = 09b09145-459b-4f71-a183-8d99372cd639
+# variable set hash-table stats:
+# Load=90/1024=9%, Rehash=0, Collisions=2/117=2%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777233, inode 3985320): 7 files, no impossibilities.
+
+# 7 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+create-kind-cluster:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 7):
+	@kind create cluster --config kind-cluster.yaml
+	
+
+setup-bucket:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 26):
+	@kubectl apply -f example-setup/setup-bucket-job.yaml -n $(MINIO_TENANT_NAMESPACE)
+	@kubectl wait --for=condition=complete Job/setup-bucket --timeout=300s -n $(MINIO_TENANT_NAMESPACE)
+	
+
+# Not a target:
+all:
+#  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-02 22:35:01
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+delete-kind-cluster:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 10):
+	@kind delete cluster --name kind-cluster
+	
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+minio-operator: operator-namespace
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 17):
+	$(GET_LATEST_MINIO_VERSION)
+	@kubectl apply -k github.com/minio/operator/\?ref\=${MINIO_VERSION} -n minio-operator
+	@kubectl minio init
+	@kubectl apply -f example-setup/console-sa-secret.yaml -n minio-operator
+	@kubectl wait --for=condition=ready pod -l name=minio-operator -n minio-operator --timeout=600s
+	@kubectl -n minio-operator get secret console-sa-secret -o jsonpath="{.data.token}" | base64 --decode > minio-operator.key
+	
+
+awssdk-python:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 40):
+	@docker build -t pjuarezd/minio-operator-sts-example-python:latest operator-sts/AWSSDK/python/
+	@kubectl apply -f operator-sts/AWSSDK/python/job.yaml
+	@kubectl wait --for=condition=complete Job/python-example --timeout=300s -n myapplication
+	
+
+operator-namespace:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 13):
+	@kubectl create namespace $(OPERATOR_NAMESPACE) --dry-run=client -o yaml | kubectl apply -f -
+	
+
+minio-tenant:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 30):
+	@kubectl create namespace $(MINIO_TENANT_NAMESPACE)  --dry-run=client -o yaml | kubectl apply -f -
+	@kubectl minio tenant create $(MINIO_TENANT_NAME)   \
+	--servers                 3                          \
+	--volumes                 6                          \
+	--capacity                16Ti                       \
+	--storage-class           standard                   \
+	--namespace               $(MINIO_TENANT_NAMESPACE)  \
+	--disable-tls
+	
+
+miniosdk-go:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 45):
+	@go install && go build -o client
+	@docker build -t pjuarezd/minio-operator-sts-example-go:latest operator-sts/MinioSDK/go/
+	@kubectl apply -f operator-sts/MinioSDK/go/job.yaml
+	@kubectl wait --for=condition=complete Job/go-example --timeout=300s -n gosdk
+	
+
+# files hash-table stats:
+# Load=12/1024=1%, Rehash=0, Collisions=0/25=0%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Tue Aug  2 22:38:45 2022
+
+ 
