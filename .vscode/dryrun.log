@@ -1,4 +1,0 @@
-make: Entering directory `/Users/pedro/pjuarezd/operator-sts-examples'
-kind create cluster --config kind-cluster.yaml
-make: Leaving directory `/Users/pedro/pjuarezd/operator-sts-examples'
- 
