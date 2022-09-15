@@ -10,7 +10,7 @@ import (
 
 func main() {
 	endpoint := "minio.minio-tenant-1.svc.cluster.local"
-	operatorEndpoint := "http://operator.minio-operator.svc.cluster.local:4221/sts/"
+	operatorEndpoint := "http://sts.minio-operator.svc.cluster.local:4223/sts/"
 	useSSL := true
 
 	minioClient, err := minio.New(endpoint, &minio.Options{
