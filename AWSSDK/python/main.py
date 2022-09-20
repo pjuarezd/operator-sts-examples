@@ -18,7 +18,7 @@ an_policy = """
 }
 """
 
-sts = boto3.client('sts', endpoint_url='http://operator.minio-operator.svc.cluster.local:4221/sts/')
+sts = boto3.client('sts', endpoint_url='https://sts.minio-operator.svc.cluster.local:4222/sts/')
 assumed_role_object = sts.assume_role_with_web_identity(
     RoleArn='minio-tenant-1/minio-tenant',
     RoleSessionName='optional-session-name',
