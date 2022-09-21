@@ -9,7 +9,7 @@ metadata:
   namespace: gosdk
   name: goapp
 ---
-apiVersion: minio.min.io/v2
+apiVersion: sts.min.io/v1beta1
 kind: PolicyBinding
 metadata:
   namespace: minio-tenant-1

@@ -19,11 +19,17 @@ an_policy = """
 """
 
 sts = boto3.client('sts', endpoint_url='https://sts.minio-operator.svc.cluster.local:4222/sts/')
+
+jwt_token_path = '/var/run/secrets/kubernetes.io/serviceaccount/token'
+
+sa_jwt = open(jwt_token_path, "r")
+
 assumed_role_object = sts.assume_role_with_web_identity(
-    RoleArn='minio-tenant-1/minio-tenant',
+    RoleArn='arn:aws:iam:::role/root',
     RoleSessionName='optional-session-name',
     Policy=an_policy,
-    DurationSeconds=25536
+    DurationSeconds=25536,
+    WebIdentityToken=sa_jwt.read()
 )
 
 credentials = assumed_role_object['Credentials']
